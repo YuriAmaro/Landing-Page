@@ -1,0 +1,143 @@
+body{
+    background-color: #171738;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo{
+    flex-direction: column;
+    line-height: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+h1{
+    font-weight: 200px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    
+}
+aside{
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+}
+span{
+    color: #E1AA7D;
+
+}
+p{
+    line-height: 20px;
+    max-width: 500px;
+    
+}
+img{
+    width: 600px;
+    animation: float 3.8s ease-in-out infinite;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color:  #E1AA7D;
+    transition: 0.3s all;
+}
+#buttom{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #E1AA7D;
+    padding: 18px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.borda{
+    outline: 2px solid #E1AA7D;
+    outline-offset: 2px;
+}
+#buttom:hover{
+    background-color: #d39461;
+    transition: 0.5s;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+form [type="submit"]{
+    height: 50px;
+    width: 70%;
+    color: #171738;
+    background-color: #E1AA7D;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+    background-color: #d39461;
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+}
+footer{
+    border-top: 1px solid #d394616e;
+    width: 100%;
+    height: 10vh;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    margin: 20px auto;
+    color: #3e3e42;
+}
+.footer-icons i{
+    font-size: 34px;
+    padding: 12px;
+    margin-top: 16px;
+    color: #E1AA7D;
+}
+.footer-icons i:hover{
+    transform: scale(1.2);
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
